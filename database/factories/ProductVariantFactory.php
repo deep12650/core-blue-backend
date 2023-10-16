@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,19 +17,8 @@ class ProductVariantFactory extends Factory
      */
     public function definition(): array
     {
-        $productVariants = [
-            'Speedboat',
-            'Cabin Cruiser',
-            'RIB',
-            'Trawler',
-            'Sloop',
-            'Ketch',
-            // Add more variants as needed
-        ];
-
         return [
-            'name' => $this->faker->randomElement($productVariants),
-            'product_id' => rand(1, 100),
+            'name' => 'Product Variant '. uniqid(),
             'sku' => 'SKU-' . uniqid(),
             'price' => rand(100000, 9999000),
             'sale_price' => rand(1000, 9999),

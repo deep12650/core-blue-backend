@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class MediaProductVariant extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'media_id', 'product_variant_id'
+    ];
 }
