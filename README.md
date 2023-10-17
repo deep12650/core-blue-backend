@@ -1,66 +1,111 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Core Blue Laravel API Trial Project 2023
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Time Spent
+- Total 6 hours
 
-## About Laravel
+### Project Stories
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+#### Epic 1: Browsing the catalogue/Viewing boats
+As a visitor, I’d like to be able to browse the catalogue of boats, giving me a summary of the most important details of each product.
+As a visitor, I’d like to click into boats on the catalogue and view additional information on them.
+##### Story 1
+As a visitor, I’d like to be able to see a list of all the boats in the catalogue, so that I can browse them.
+##### Story 2
+As a visitor, I’d like to be able to see the details of a single boat, so that I can see all the information about it.
+##### Story 3
+As a visitor, I’d like to be able to see the variants of a boat, so that I can see all the different options available for it.
+##### Story 4
+As a visitor, I’d like to be able to see the price of a boat, so that I can see how much it costs.
+##### Story 5
+As a visitor, I’d like to be able to see the name of a boat, so that I can see what it’s called.
+##### Story 6
+As a visitor, I’d like to be able to see the description of a boat, so that I can see what it’s like.
+##### Story 7
+As a visitor, I’d like to be able to see the SKU of a boat, so that I can see what it’s called.
+##### Story 8
+As a visitor, I’d like to be able to see the status of a boat, so that I can see if it’s available or not.
+##### Story 9
+As a visitor, I’d like to be able to see the images of a boat, so that I can see what it looks like.
+##### Story 10
+As a visitor, I’d like to be able to see the videos of a boat, so that I can see what it looks like.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#### Epic 2: Filtering/Sorting the catalogue
+As a visitor, I’d like to be able to filter the catalogue of boats, so that I can find the boat I’m looking for.
+##### Story 1
+As a visitor, I’d like to be able to filter the catalogue of boats by name, so that I can find the boat I’m looking for.
+##### Story 2
+As a visitor, I’d like to be able to filter the catalogue of boats by price, so that I can find the boat I’m looking for.
+##### Story 3
+As a visitor, I’d like to be able to filter the catalogue of boats by status, so that I can find the boat I’m looking for.
+##### Story 4
+As a visitor, I’d like to be able to filter the catalogue of boats by variant, so that I can find the boat I’m looking for.
+##### Story 5
+As a visitor, I’d like to be able to sort the catalogue of boats by name, so that I can find the boat I’m looking for.
+##### Story 6
+As a visitor, I’d like to be able to sort the catalogue of boats by price, so that I can find the boat I’m looking for.
+##### Story 7
+As a visitor, I’d like to be able to sort the catalogue of boats by status, so that I can find the boat I’m looking for.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+#### Epic 3: Searching the catalogue
+As a visitor, I’d like to be able to search the catalogue of boats, so that I can find the boat I’m looking for.
+##### Story 1
+As a visitor, I’d like to be able to search the catalogue of boats by name, so that I can find the boat I’m looking for.
+##### Story 2
+As a visitor, I’d like to be able to search the catalogue of boats by variant, so that I can find the boat I’m looking for.
+##### Story 3
+As a visitor, I’d like to be able to search the catalogue of boats by category, so that I can find the boat I’m looking for.
 
-## Learning Laravel
+#### Epic 4: Purchasing a boat
+As a visitor, I’d like to use my card to purchase a boat, so that I can buy it.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+##### Story 1
+As a visitor, I’d like to be able to add a boat to my cart, so that I can buy it.
+##### Story 2
+As a visitor, I’d like to be able to remove a boat from my cart.
+##### Story 3
+As a visitor, I’d like to be able to see the total price of my cart, so that I can see how much it costs.
+##### Story 4
+As a visitor, I’d like to be able to pay from my card, so that I can buy the boat.
+##### Story 5
+As a visitor, I’d like to be able to see the status of my order, so that I can see if it’s been successful or not.
+##### Story 6
+As a visitor, I’d like to be able to see the details of my order, so that I can see what I’ve bought.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Installation
+- Clone the repository
+- Create a database
+- Copy `.env.example` to `.env`
+- Update `.env` with your database credentials
+- Run `composer install`
+- Run `php artisan db:migrate`
+- Run `php artisan db:seed`
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### GraphQL Playground
+- Run `php artisan serve`
+- Visit `http://127.0.0.1:8000/graphiql`
+- Run the following query to get all products and it's variant:
+```
+query
+{
+    products {
+      paginatorInfo {
+        total
+          currentPage
+          hasMorePages
+      }
+      data {
+        id
+        name
+        variants
+        {
+          name
+          price
+          description
+          sku
+          is_active
+        }
+      }
+    }
+}
+```
